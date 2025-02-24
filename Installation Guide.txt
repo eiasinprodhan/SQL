@@ -1,0 +1,12 @@
+1. Install JDK 17
+2. Install Oracle 19c
+3. Install SQL Developer
+4. Type This Command in Command Prompt
+
+sqlplus as sysdba;
+alter session set container=orclpdb;
+alter pluggable database open;
+alter pluggable database orclpdb save state;
+alter user hr identified by hr account unlock;
+
+5. Now Connect With SQL Developer
