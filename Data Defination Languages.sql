@@ -30,7 +30,7 @@ hire_date DATE NOT NULL,
 address VARCHAR2(30) NOT NULL);
 
 --Question No 2
-SELECT department_id, AVG(salary)
+SELECT department_id, ROUND(AVG(salary),2)
 FROM employees
 GROUP BY department_id
 HAVING MAX(salary)>12000;
