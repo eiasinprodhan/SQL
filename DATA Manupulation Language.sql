@@ -27,3 +27,9 @@ FROM employees NATURAL JOIN departments NATURAL JOIN locations NATURAL JOIN coun
 WHERE department_id = 100;
 
 ROLLBACK;
+
+DROP TABLE EMP1287470;
+
+UPDATE EMP1287470
+SET ename = 'Abdur Rahim'
+WHERE eid=5;
